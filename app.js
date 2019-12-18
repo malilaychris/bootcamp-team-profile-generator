@@ -148,7 +148,7 @@ function renderHTML() {
     }
   }
 
-  fs.appendFileSync('./output/index.html', '', (err) => {
+  fs.appendFileSync('./output/index.html', `</div></main></body></html>`, (err) => {
     if(err) {
       throw err;
     }
@@ -158,6 +158,7 @@ function renderHTML() {
 function renderEmployeeCard(name, id, email, role, property) {
   let data = fs.readFileSync(`./templates/${role}.html`, 'utf8');
   data = data.replace('<div id="name"></div>', name);
+  data = data.replace('<div id="role"></div>', role);
   data = data.replace('<div id="id"></div>', `ID: ${id}`);
   data = data.replace('<div id="email"></div>', `Email: <a href="mailto:${email}">${email}</a>`);
   data = data.replace('<div id="officeNumber"></div>', `Office Number: ${property}`);

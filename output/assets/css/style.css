@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  background: #121212;
+  color: #fff;
+}
+
+header {
+  background: #272727;
+  margin: 0 0 2em;
+  padding: 4em;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+a {
+  color: #fe5722;
+  text-decoration: none;
+}
+
+.main-card {
+  background: #1e1e1e;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.87);
+  flex: 0 0 30%;
+  margin: 0.8em;
+  padding: 1.8em 1.2em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-info {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85em;
+  margin: 3em 0 1em;
+  line-height: 1.8em;
+}
